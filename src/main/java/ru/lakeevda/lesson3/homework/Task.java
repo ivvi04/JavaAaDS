@@ -2,7 +2,7 @@ package ru.lakeevda.lesson3.homework;
 
 public class Task {
     public static void main(String[] args) {
-        // Создаем связанный список 1 -> 2 -> 3 -> 4
+        // РЎРѕР·РґР°РµРј СЃРІСЏР·Р°РЅРЅС‹Р№ СЃРїРёСЃРѕРє 1 -> 2 -> 3 -> 4
         Node head;
         if (args.length == 0) {
             head = new Node(1);
@@ -16,13 +16,13 @@ public class Task {
             head.next.next.next = new Node(Integer.parseInt(args[3]));
         }
 
-        // Сохраняем голову списка в поле класса Answer
+        // РЎРѕС…СЂР°РЅСЏРµРј РіРѕР»РѕРІСѓ СЃРїРёСЃРєР° РІ РїРѕР»Рµ РєР»Р°СЃСЃР° Answer
         Answer ans = new Answer();
         ans.head = head;
-        // Инвертируем порядок элементов списка
+        // РРЅРІРµСЂС‚РёСЂСѓРµРј РїРѕСЂСЏРґРѕРє СЌР»РµРјРµРЅС‚РѕРІ СЃРїРёСЃРєР°
         ans.reverse();
 
-        // Выводим инвертированный порядок элементов списка
+        // Р’С‹РІРѕРґРёРј РёРЅРІРµСЂС‚РёСЂРѕРІР°РЅРЅС‹Р№ РїРѕСЂСЏРґРѕРє СЌР»РµРјРµРЅС‚РѕРІ СЃРїРёСЃРєР°
         Node current = ans.head;
         while (current != null) {
             System.out.print(current.val + " ");
